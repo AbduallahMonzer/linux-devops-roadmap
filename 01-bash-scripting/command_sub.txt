@@ -1,0 +1,5 @@
+Hello this line wrote in bash with using the hello.sh file
+# 
+myfile="command_sub.txt"
+line_count=$(wc -l < "$myfile")
+echo "The file has $line_count lines."
