@@ -25,3 +25,14 @@ sum 12 15
 sub 13 12
 ret=$?
 echo "return value is: " $ret
+
+# nested function
+sum1(){
+	echo "The sum $1 and $2 is: " $(($1+$2))
+
+	sub1(){
+		echo "The sub $1 and $2 is: " $(($1-$2))
+	}
+	sub1 4 2
+}
+sum1 4 2
